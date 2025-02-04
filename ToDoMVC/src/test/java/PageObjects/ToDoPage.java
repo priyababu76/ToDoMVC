@@ -125,7 +125,7 @@ public class ToDoPage {
 
 			}
 		}
-		Thread.sleep(4000);
+		
 	}
 
 	public void getActive() throws InterruptedException {
@@ -163,13 +163,12 @@ public class ToDoPage {
 		
 	for (String s : list) {
 				txtTodo.sendKeys(s);
-				System.out.println(txtTodo.getText());
+				
 				txtTodo.sendKeys(s, Keys.ENTER);
 	
 			}
 		lblAll.click();
-		//addTodo(list);
-		//System.out.println(chkList.size());
+		
 		WebElement toggleAll=driver.findElement(By.xpath("//input[@id='toggle-all']"));
 		toggleAll.click();
 	}
