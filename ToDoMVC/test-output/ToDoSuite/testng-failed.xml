@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ToDoSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ToDoTest(failed)">
+    <classes>
+      <class name="TestCases.ToDoTest">
+        <methods>
+          <include name="chooseAll" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="removeTodo" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestCases.ToDoTest -->
+    </classes>
+  </test> <!-- ToDoTest(failed) -->
+</suite> <!-- Failed suite [ToDoSuite] -->
